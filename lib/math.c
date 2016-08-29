@@ -30,7 +30,7 @@ float binompdf(int n, float p, int k) {
 //assumes 0<=value<=trials, 0.0<=probability<=1.0
 float binomcdf(int trials, float probability, int value) {
 	if (value == 0) {
-		return (float)value;
+		return 0.0f;
 	}
 	if (trials == 1 || probability == 0 || probability == 1) {
 		return 1 - probability;
